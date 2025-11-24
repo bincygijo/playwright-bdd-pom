@@ -1,0 +1,285 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-process;add-items-to-cart-and-proceed-to-checkout",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add items to cart and proceed to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 176289400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as \"standard_user\" \"secret_sauce\"",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 901944500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I add 2 items to the cart",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120133299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I open the cart",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54662500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44857399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I fill user info \"John\" \"Doe\" \"12345\"",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88033899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I place the order",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39085700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the order confirmation message",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5188400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174103000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-process",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout Process",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;valid-login-with-standard-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Valid Login with Standard User",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163425600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 779160599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121029199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be redirected to inventory page",
+            "match": {
+              "location": "features\\step_definitions\\login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9910700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88103599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sort-inventory-items;sort-items-by-price-low-to-high",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Sort items by price low to high",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 150822200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as \"standard_user\" \"secret_sauce\"",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 836669100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I sort products by \"lohi\"",
+            "match": {
+              "location": "features\\step_definitions\\sorting.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28496699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the products should be sorted by price ascending",
+            "match": {
+              "location": "features\\step_definitions\\sorting.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84643799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 139965500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sort-inventory-items",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sort inventory items",
+    "tags": [],
+    "uri": "features\\sorting.feature"
+  }
+]
