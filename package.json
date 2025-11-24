@@ -1,0 +1,22 @@
+{
+  "name": "playwright-bdd-pom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+     "test": "cucumber-js --require-module ts-node/register",
+  "report": "npx cucumber-html-reporter --theme bootstrap --jsonFile reports/report.json --output reports/report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/html-formatter": "^22.1.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "playwright-bdd": "^8.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
